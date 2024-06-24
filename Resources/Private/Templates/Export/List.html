@@ -38,10 +38,10 @@
                             <f:form.hidden name="submitted" value="" id="hidden-submitted" />
                             <f:if condition="{composerMode}}">
                                 <f:then>
-                                    <button class="btn btn-default col-sm-3 t3js-modal-trigger" data-href="javascript:document.querySelector('#hidden-submitted').value = 'install'; document.querySelector('form').submit();" data-severity="warning" data-title="Write extension to file system?" data-content="Are you sure you want to write the new extension files to your local file system? This action might overwrite extisting files." data-button-ok-text="Overwrite" style="margin-left: 9px;">Write</button>
+                                    <button class="btn btn-default col-sm-3 t3js-modal-trigger" data-title="Write extension to file system?" data-content="Are you sure you want to write the new extension files to your local file system? This action might overwrite extisting files.">Write</button>
                                 </f:then>
                                 <f:else>
-                                    <button class="btn btn-default col-sm-3 t3js-modal-trigger" data-href="javascript:document.querySelector('#hidden-submitted').value = 'install'; document.querySelector('form').submit();" data-severity="warning" data-title="Write and install the extension?" data-content="Are you sure you want to write the new extension files to your local file system and install it afterwards? This action might overwrite extisting files." data-button-ok-text="Overwrite" style="margin-left: 9px;">Install</button>
+                                    <button class="btn btn-default col-sm-3 t3js-modal-trigger" data-title="Write and install the extension?" data-content="Are you sure you want to write the new extension files to your local file system and install it afterwards? This action might overwrite extisting files.">Install</button>
                                 </f:else>
                             </f:if>
                             <f:form.submit name="submitted" value="Download" class="btn btn-default col-sm-3" style="margin-left: 9px;" />
